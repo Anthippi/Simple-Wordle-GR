@@ -15,6 +15,7 @@ def check_guess(guess, target):
 
     Returns:
         list[str]: Λίστα με αποτελέσματα για κάθε γράμμα ('correct', 'present', 'absent').
+        target_list[str]: Λίστα με τα γράμματα της λέξης-εικασία του παίχτη.
     """
 
     result = ['absent'] * len(guess)

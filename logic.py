@@ -17,15 +17,21 @@ def check_guess(guess, target):
         list[str]: Λίστα με αποτελέσματα για κάθε γράμμα ('correct', 'present', 'absent').
     """
 
-    result = []
+    result = ['absent'] * len(guess)
+    target_list = list(target)
 
     for i in range(len(guess)):
         if guess[i] == target[i]:
-            result.append("correct")
-        elif guess[i] in target:
-            result.append("present")
-        else:
-            result.append("absent")
+            result[i] = 'correct'
+            target_list[i] = None
+
+    for i in range(len(guess)):
+        if result[i] == 'correct':
+            continue
+        if guess[i] in target_list:
+            result[i] = 'present'
+            target_list[target_list.index(guess[i])] = None
+
     return result
 
 

@@ -1,9 +1,9 @@
 import random
 
 words = [
-"""
+    """
     Κεφαλαίες ελληνικές λέξεις με πέντε γράμματα. 
-"""
+    """
 ]
 
 def get_random_word():
@@ -13,5 +13,4 @@ def get_random_word():
         str: Η επιλεγμένη λέξη.
     """
     word = random.choice(words)
-    print(word)
     return word

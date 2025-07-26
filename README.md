@@ -52,5 +52,8 @@ python main.py
 
 Το παιχνίδι θα ανοίξει σε ένα νέο παράθυρο GUI.
 
-![Wordle](https://github.com/user-attachments/assets/6dbdb02b-74d1-467b-9968-0806f34b665e)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6dbdb02b-74d1-467b-9968-0806f34b665e" alt="Wordle" width="400"/>
+</p>
+
 
